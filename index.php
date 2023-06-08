@@ -14,8 +14,10 @@ function create_pw($length)
     return $password;
 }
 
+$password = "";
+
 $password = create_pw($length);
-echo "Password Generata: " . $password;
+
 
 
 ?>
@@ -44,6 +46,11 @@ echo "Password Generata: " . $password;
             <button type="submit" class="btn btn-primary col-1 mb-3 me-3">Invia</button>
             <button type="reset" class="btn btn-secondary col-1 mb-3">Cancella</button>
         </form>
+
+        <div class="mt-3">
+            <h2>Password Generata:</h2>
+            <p><?php echo $password; ?></p>
+        </div>
 
     </div>
 
