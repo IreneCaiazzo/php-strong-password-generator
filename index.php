@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . '/functions.php';
+include_once __DIR__ . '/functions.php';
 
 ?>
 
@@ -23,7 +23,7 @@ include __DIR__ . '/functions.php';
 
         <h1>Scrivi da quanti caratteri vuoi che sia composta la tua password e premi invia</h1>
 
-        <form class="row g-3 mt-3" action="" method="GET">
+        <form class="row g-3 mt-3" action="" method="GET" novalidate>
             <input class="form-control" type="number" placeholder="Scrivi qui il numero" aria-label="default input example" name="length">
             <button type="submit" class="btn btn-primary col-1 mb-3 me-3">Invia</button>
             <button type="reset" class="btn btn-secondary col-1 mb-3">Cancella</button>
@@ -31,7 +31,7 @@ include __DIR__ . '/functions.php';
 
         <div class="mt-3">
             <h2>Password Generata:</h2>
-            <p><?php echo $password; ?></p>
+            <p><?= $password; ?></p>
         </div>
 
     </div>
